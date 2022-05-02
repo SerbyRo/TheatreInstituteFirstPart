@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="showTableViewList" prefHeight="608.0" prefWidth="833.0" style="-fx-background-color: lightgreen;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllersGUI.MainController">
+   <children>
+      <TableView fx:id="ShowTableView" layoutX="27.0" layoutY="14.0" prefHeight="368.0" prefWidth="473.0">
+        <columns>
+          <TableColumn fx:id="showIdTableColumn" prefWidth="53.60000991821289" text="show_id" />
+          <TableColumn fx:id="nameTableColumn" prefWidth="82.39999389648438" text="name" />
+            <TableColumn fx:id="descriptionTableColumn" prefWidth="183.99998474121094" text="description" />
+            <TableColumn fx:id="typeTableColumn" prefWidth="59.20001220703125" text="type" />
+            <TableColumn fx:id="nrOfSeatsTableColumn" prefWidth="92.80001220703127" text="nrofseats" />
+        </columns>
+      </TableView>
+      <Label layoutX="518.0" layoutY="48.0" prefHeight="18.0" prefWidth="100.0" text="Nume spectacol:" textFill="#3902ef" />
+      <TextField fx:id="nameShowTextBox" layoutX="632.0" layoutY="45.0" />
+      <Label layoutX="512.0" layoutY="104.0" prefHeight="18.0" prefWidth="111.0" text="Descrierea showului:" textFill="#3902ef" />
+      <TextField fx:id="descriptionShowTextBox" layoutX="633.0" layoutY="101.0" />
+      <Label layoutX="516.0" layoutY="159.0" prefHeight="18.0" prefWidth="100.0" text="Tipul showului:" textFill="#3902ef" />
+      <TextField fx:id="typeShowTextBox" layoutX="633.0" layoutY="156.0" />
+      <Label layoutX="517.0" layoutY="212.0" prefHeight="18.0" prefWidth="94.0" text="Numar de locuri:" textFill="#3902ef" />
+      <TextField fx:id="nrofseatsTextBox" layoutX="634.0" layoutY="209.0" />
+      <Button fx:id="addShowButton" layoutX="519.0" layoutY="268.0" mnemonicParsing="false" onMouseClicked="#AddShowOnClick" prefHeight="26.0" prefWidth="100.0" text="Add show" textFill="#fa0085" />
+      <Button fx:id="deleteShowButton" layoutX="670.0" layoutY="267.0" mnemonicParsing="false" onMouseClicked="#DeleteShowOnClick" prefHeight="26.0" prefWidth="111.0" text="Delete show" textFill="#fa0085" />
+      <Button fx:id="modifyShowButton" layoutX="600.0" layoutY="330.0" mnemonicParsing="false" onMouseClicked="#ModifyShowOnClick" prefHeight="26.0" prefWidth="111.0" text="Modify show" textFill="#fa0085" />
+      <Button fx:id="createAccountClientButton" layoutX="514.0" layoutY="402.0" mnemonicParsing="false" onMouseClicked="#createAccountClientOnClick" prefHeight="26.0" prefWidth="138.0" text="Create account client" textFill="#fa0085" />
+      <Button fx:id="buyticketButton" layoutX="681.0" layoutY="403.0" mnemonicParsing="false" onMouseClicked="#BuyTicketButtonOnClick" prefHeight="26.0" prefWidth="111.0" text="Buy ticket" textFill="#fa0085" />
+      <Button fx:id="refreshButton" layoutX="60.0" layoutY="522.0" mnemonicParsing="false" onMouseClicked="#RefreshShowsOnClick" prefHeight="37.0" prefWidth="150.0" text="Refresh" textFill="#2c04ef" />
+      <Button fx:id="logoutButton" layoutX="669.0" layoutY="528.0" mnemonicParsing="false" onMouseClicked="#LogoutOnClick" prefHeight="38.0" prefWidth="100.0" text="Logout" textFill="RED" />
+   </children>
+</AnchorPane>

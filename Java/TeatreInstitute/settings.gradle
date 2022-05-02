@@ -1,0 +1,8 @@
+rootProject.name = 'TeatreInstitute'
+include 'Model'
+include 'Persistence'
+include 'Networking'
+include 'Services'
+include 'Server'
+include 'Client'
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="567.0" prefWidth="940.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllersGUI.ClientController">
+   <children>
+      <TableView fx:id="ClientsTableList" layoutX="231.0" layoutY="14.0" prefHeight="372.0" prefWidth="454.0">
+        <columns>
+          <TableColumn fx:id="clientIdTableColumn" prefWidth="75.0" text="client_id" />
+          <TableColumn fx:id="firstNameTableColumn" prefWidth="75.0" text="first_name" />
+            <TableColumn fx:id="usernameClientTableColumn" prefWidth="75.0" text="username" />
+            <TableColumn fx:id="passwordClientTableColumn" prefWidth="75.0" text="password" />
+            <TableColumn fx:id="ageClientTableColumn" prefWidth="75.0" text="age" />
+            <TableColumn fx:id="genderClientTableColumn" prefWidth="75.0" text="gender" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="50.0" layoutY="41.0" prefHeight="24.0" prefWidth="126.0" text="Prenumele clientului:" textFill="YELLOW" />
+      <TextField fx:id="firstNameClientTextBox" layoutX="39.0" layoutY="82.0" />
+      <Label alignment="CENTER" layoutX="62.0" layoutY="144.0" prefHeight="18.0" prefWidth="126.0" text="Parola clientului:" textFill="YELLOW" />
+      <TextField fx:id="passwordClientTextBox" layoutX="40.0" layoutY="194.0" />
+      <Label layoutX="62.0" layoutY="260.0" prefHeight="18.0" prefWidth="126.0" text="Sexul clientului:" textFill="YELLOW" />
+      <TextField fx:id="genderClientTextBox" layoutX="39.0" layoutY="316.0" />
+      <Label layoutX="759.0" layoutY="44.0" prefHeight="18.0" prefWidth="134.0" text="Username-ul clientului:" textFill="YELLOW" />
+      <TextField fx:id="usernameClientTextBox" layoutX="739.0" layoutY="95.0" />
+      <Label alignment="CENTER" layoutX="742.0" layoutY="162.0" prefHeight="18.0" prefWidth="142.0" text="Varsta clientului:" textFill="YELLOW" />
+      <TextField fx:id="ageClientTextBox" layoutX="738.0" layoutY="228.0" />
+      <Button fx:id="addClientButton" layoutX="375.0" layoutY="436.0" mnemonicParsing="false" onMouseClicked="#addClientOnClick" prefHeight="34.0" prefWidth="150.0" text="Register client" textFill="#f70098" />
+      <Button fx:id="logoutButton" layoutX="829.0" layoutY="498.0" mnemonicParsing="false" onMouseClicked="#LogoutOnClick" prefHeight="34.0" prefWidth="92.0" text="Logout" textFill="RED" />
+   </children>
+</AnchorPane>

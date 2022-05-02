@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+
+        <property name="dialect">Utils.SQLiteDialect</property>
+        <property name="connection.driver_class">org.sqlite.JDBC</property>
+        <property name="connection.url">jdbc:sqlite:..\\teatru.db</property>
+
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- Echo all executed SQL to stdout -->
+        <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
+
+
+
+        <mapping class="Domain.User"/>
+        <mapping class="Domain.Show"/>
+        <mapping class="Domain.Client"/>
+        <mapping class="Domain.Ticket"/>
+    </session-factory>
+</hibernate-configuration>
